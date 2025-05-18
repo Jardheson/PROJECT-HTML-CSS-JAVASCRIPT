@@ -1,0 +1,7 @@
+Este código é um arquivo HTML básico que serve como estrutura para uma página web chamada "Relógio Digital". Ele começa com a declaração do tipo de documento (<!DOCTYPE html>), que informa ao navegador que o conteúdo está usando HTML5. O elemento <html> define o idioma da página como português do Brasil através do atributo lang="pt-br".
+
+Dentro da seção <head>, há três elementos importantes: o <meta charset="UTF-8" /> garante que caracteres especiais em português sejam exibidos corretamente; o <meta name="viewport" content="width=device-width, initial-scale=1.0" /> faz com que a página seja responsiva, ou seja, se adapte a diferentes tamanhos de tela, especialmente em dispositivos móveis; e o <link rel="stylesheet" href="style.css" /> conecta um arquivo CSS externo chamado style.css, responsável pela aparência visual da página. O <title> define o nome que aparece na aba do navegador.
+
+No <body>, há uma <div> com a classe "clock", que provavelmente será usada para exibir o relógio digital na tela. Por fim, o <script src="script.js"></script> importa um arquivo JavaScript externo chamado script.js, que deve conter a lógica para atualizar e mostrar o horário dentro da div "clock".
+
+Esse padrão de estrutura é comum em projetos web, separando o conteúdo (HTML), o estilo (CSS) e o comportamento (JavaScript) para facilitar a manutenção e o desenvolvimento do site.

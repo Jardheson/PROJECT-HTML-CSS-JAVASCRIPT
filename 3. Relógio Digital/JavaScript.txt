@@ -1,0 +1,7 @@
+Este trecho de código JavaScript cria um efeito visual de carregamento (loading) em uma página web. Ele começa selecionando dois elementos do DOM: um com a classe .text-loading (que provavelmente exibe o texto do carregamento, como "0%") e outro com a classe .background (que representa o fundo da página ou de uma seção).
+
+A variável load é inicializada em 0 e, em seguida, a função setInterval chama a função blurring a cada 30 milissegundos. Dentro de blurring, o valor de load é incrementado em 1 a cada chamada. Quando load ultrapassa 99, o setInterval é interrompido usando clearInterval(int), encerrando o efeito de carregamento.
+
+Durante cada iteração, o texto do elemento .text-loading é atualizado para mostrar a porcentagem atual de carregamento. Além disso, a opacidade desse texto diminui gradualmente de 1 para 0 conforme o carregamento avança, graças à função scale, que faz uma interpolação linear entre dois intervalos de valores. O mesmo conceito é aplicado ao filtro de desfoque (blur) do elemento .background, que começa em 30 pixels e vai diminuindo até 0, tornando o fundo cada vez mais nítido.
+
+A função scale é uma função utilitária que converte um número de um intervalo para outro, facilitando a criação de transições suaves entre diferentes propriedades visuais. Esse padrão é útil para criar animações de carregamento elegantes e responsivas.
